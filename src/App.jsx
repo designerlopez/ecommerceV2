@@ -8,7 +8,6 @@ import NewUserScreen from "./components/Login/NewUserScreen";
 import ProductId from "./components/productId/ProductId";
 import ProtectedRoutes from "./components/ProtectedRoutes";
 import PurchasesScreen from "./components/Purchases/PurchasesScreen";
-import FooterScreen from "./components/Shared/FooterScreen";
 import HeaderScreen from "./components/Shared/HeaderScreen";
 import { getAllProducts } from "./store/slices/products.slice";
 
@@ -36,7 +35,7 @@ function App() {
         <Route path="/product/:id" element={<ProductId/>}/>
       </Routes>
       </main>
-      <FooterScreen/>
+      
     </div>
   );
 }
