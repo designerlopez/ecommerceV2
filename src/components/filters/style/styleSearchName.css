@@ -1,0 +1,115 @@
+.container__filterName {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.formNameProduct {
+    padding-top: 1.5em;
+    width: min(90%, 700px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3em;
+}
+
+.formNameProduct__item {
+    width: 70%;
+}
+
+.formNameProduct__input {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 30px;
+    box-shadow: 0 1px 3px #17181ccc;
+    border-radius: 0.5em;
+    padding-left: 1em;
+}
+
+.formNameProduct__input::placeholder {
+    font-size: 0.8em;
+}
+
+.formNameProduct__btn {
+    width: 40px;
+    height: 30px;
+    border: none;
+    background-color: #2A3240;
+    color: #EAEBED;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: 300ms all;
+
+}
+
+.formNameProduct__btn:active {
+    transform: scale(0.90);
+}
+
+@media screen and (min-width: 720px) {
+    .container__filterName {
+        position: relative;
+        padding: 2em 0;
+    }
+
+    .formNameProduct {
+        position: absolute;
+        top: 1em;
+        right: 0px;
+    }
+
+    .formNameProduct__input {
+        border: none;
+        outline: none;
+        height: 40px;
+    }
+
+    .formNameProduct__input::placeholder{
+        font-size: 1.2em;
+    }
+
+    .formNameProduct__btn {
+        width: 60px;
+        height: 40px;
+        border: none;
+    }
+
+    .formNameProduct__btn i {
+        font-size: 1.5em;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+    .formNameProduct {
+        width: 70%;
+    }
+    
+    .formNameProduct__item {
+        width: 70%;
+    }
+    
+
+    .formNameProduct__input {
+        height: 45px;
+    }
+
+    .formNameProduct__input::placeholder{
+        font-size: 1.3em;
+    }
+
+    .formNameProduct__btn {
+        width: 65px;
+        height: 45px;
+        border: none;
+    }
+
+    .formNameProduct__btn i {
+        font-size: 1.5em;
+    }
+
+
+}

@@ -1,0 +1,164 @@
+.login {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-white);
+}
+
+.form {
+    width: min(90%, 500px);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #17181ce2;
+    border-radius: 1em;
+}
+
+.form__welcome {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.7em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #82EF;
+    color: var(--primary-color-white);
+}
+
+.form__welcome h2 {
+    font-size: 0.8em;
+}
+
+.form__welcome-data{
+    width: 90%;
+    color: #EAEBED;
+    border-bottom: 1px solid #82EF;
+    padding-bottom: 0.7em;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.form__welcome-data p:nth-child(1){
+    font-weight: 900;
+    padding-bottom: 5px;
+}
+
+.register__text {
+    padding: 20px;
+    color: var(--primary-color-white);
+    font-size: 0.6em;
+    width: 100%;
+    text-align: center;
+}
+
+.form__item {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 0;
+    gap: 3px;
+}
+
+.form__item label {
+    color: var(--primary-color-white);
+    font-weight: 700;
+    font-size: 0.8em;
+}
+
+.form__item input {
+    border: none;
+    outline: none;
+    padding: 3px 0;
+    border-radius: 0.5em;
+    color: var(--color-title-text);
+}
+
+.form__error{
+    color: #EAEBED;
+    font-size: 0.8em;
+}
+
+.form__btn {
+    width: 70%;
+    padding: 3px 0;
+    margin-top: 10px;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #EAEBED;
+    color: #17181c;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: 200ms ease-in;
+    font-weight: bold;
+}
+
+.form__btn:hover {
+    transition: 200ms ease-in;
+    box-shadow: 1px 1px 8px #EAEBED;
+}
+
+.form__register {
+    padding: 15px 0 0 0;
+    color: #EAEBED;
+    cursor: pointer;
+    font-size: 0.6em;
+    transition: 200ms ease-in;
+}
+
+.form__register:hover {
+    color: #82EF;
+    transition: 200ms ease-in;
+}
+
+@media screen and (min-width: 720px) {
+
+    .login {
+        padding-top: 8em;
+        padding-bottom: 3em;
+    }
+
+    .form{
+        width: 600px;
+    }
+
+    .form__welcome {
+        max-width: 100%;
+    }
+
+    .form__welcome h2 {
+        font-size: 1.1em;
+    }
+
+    .form__welcome-data{
+        font-size: 1em;
+    }
+
+    .Login-email{
+        padding-left: 1.8em;
+    }
+
+    .form__item {
+        width: 70%;
+    }
+
+    .form__item label {
+        font-size: 1em;
+    }
+
+    .form__item input {
+        padding: 10px 0;
+    }
+
+    .form__btn {
+        width: 40%;
+        padding: 8px 0;
+        font-size: 1.2em;
+    }
+
+    .form__register {
+        font-size: 1em;
+    }
+}
